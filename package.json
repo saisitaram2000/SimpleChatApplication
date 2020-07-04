@@ -1,0 +1,24 @@
+{
+  "name": "simplechatapplication",
+  "version": "1.0.0",
+  "description": "simple chat app build with nodejs and socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saisitaram2000/SimpleChatApplication.git"
+  },
+  "author": "\"sai sita ram\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saisitaram2000/SimpleChatApplication/issues"
+  },
+  "homepage": "https://github.com/saisitaram2000/SimpleChatApplication#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
