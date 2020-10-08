@@ -16,7 +16,9 @@ $(function(){
 
     //send message to server
     send_message.click(function(){
+        if(message.val()){
         socket.emit('new_message',{message:message.val()});
+        }
         message.val('');
         feedback.html('');
     });
