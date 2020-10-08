@@ -47,7 +47,7 @@
   
   section#chatroom {
       /* border: 5px inset #1c006b; */
-      height: calc(100%-150px);
+      height: calc(100% - 150px);
       overflow: auto;
   }
   
@@ -94,7 +94,7 @@
   
   p.message {
       margin: 0px;
-      width: calc(100%- );
+      width: fit-content;
       /* height: 40px; */
       font-size: 2vh;
       font-family: 'Comfortaa', sans-serif;
@@ -116,3 +116,65 @@
       font-size: 18px;
       width: fit-content;
   }
+
+  header-test {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+section#chatroom {}
+
+input#message {
+    height: 100%;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+button#send_message {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 0px;
+    margin: 0px 0px;
+    color: #4056b5;
+    font-size: 7px;
+}
+
+button#send_username {
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+i {
+    color: white;
+    padding-left: 10px;
+}
+
+input#message:focus {
+    border: none;
+    outline: none;
+}
+
+section#chatroom::-webkit-scrollbar {
+    display: none;
+}
+
+section#feedback {
+    position: fixed;
+    background: #4056b5;
+}
+
+input#username:focus {
+    border: none;
+    outline: none;
+}
