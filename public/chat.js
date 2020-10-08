@@ -1,7 +1,6 @@
 $(function(){
     //connection to server
-    var socket=io.connect('http://localhost:3000');
-
+    var socket=io.connect(process.env.PORT || 3000);
     //inputs and buttons
     var username=$("#username");
     var message=$("#message");
