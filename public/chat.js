@@ -16,9 +16,7 @@ $(function(){
 
     //send message to server
     send_message.click(function(){
-        if(message.val()){
         socket.emit('new_message',{message:message.val()});
-        }
         message.val('');
         feedback.html('');
     });
@@ -33,7 +31,9 @@ $(function(){
 
     //listen new_message from server
     socket.on('new_message',data=>{
-       chatroom.append("<p class='message'>" + data.username + ": " + data.message + "</p>")
+        if(data.message.trim()){
+       chatroom.append("<p class='message'>" + data.username + ": " + data.message.trim() + "</p>")
+        }
     })
 
     //emit typing to server
