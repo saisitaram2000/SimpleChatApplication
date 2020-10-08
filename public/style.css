@@ -174,8 +174,7 @@ section#chatroom::-webkit-scrollbar {
 
 section#feedback {
     position: fixed;
-    top: -18px;
-    background: #4056b5;
+    top: 40px;   
 }
 
 input#username:focus {
