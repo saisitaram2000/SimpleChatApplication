@@ -16,6 +16,7 @@ $(function(){
 
     //send message to server
     send_message.click(function(){
+        if(message.val().trim())
         socket.emit('new_message',{message:message.val()});
         message.val('');
         feedback.html('');
@@ -34,6 +35,7 @@ $(function(){
         if(data.message.trim()){
        chatroom.append("<p class='message'>" + data.username + ": " + data.message.trim() + "</p>")
        feedback.html('');
+       $('#chatroom').scrollTop($('#chatroom')[0].scrollHeight);
         }
     })
 
