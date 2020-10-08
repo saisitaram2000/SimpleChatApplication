@@ -21,6 +21,7 @@ $(function(){
     send_username.click(function(){
         socket.emit('change_username',{username:username.val()});
         username.val('');
+      
     })
 
 
@@ -37,6 +38,7 @@ $(function(){
     //listening typing keyword from server
     socket.on('typing',data=>{
         feedback.html("<p><i>" + data.username + " is typing a message..." + "</i></p>")
+     
     })
 
 })

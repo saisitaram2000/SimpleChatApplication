@@ -40,10 +40,10 @@ io.on('connection',socket=>{
     //listen on typing
     socket.on('typing',data=>{
         //broadcasting typing keyword to all clients excluding client of this event
-        //socket.broadcast.emit('typing',{username:socket.username}); 
+        socket.broadcast.emit('typing',{username:socket.username}); 
 
         //but here i used only single client at a time so im going with this for now  but when multiple clients above one is correct
-        io.sockets.emit('typing',{username:socket.username}); 
+        // io.sockets.emit('typing',{username:socket.username}); 
     })
 })
 
