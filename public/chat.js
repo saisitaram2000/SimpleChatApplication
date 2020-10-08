@@ -5,7 +5,7 @@ console.log(PORT);
 console.log(HOST);
 $(function(){
     //connection to server
-    var socket=io.connect(`http://${HOST}:${PORT}`);
+    var socket=io.connect(`https://${HOST}:${PORT}`);
     //inputs and buttons
     var username=$("#username");
     var message=$("#message");
