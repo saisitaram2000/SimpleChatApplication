@@ -34,7 +34,7 @@
   }
   
   div#change_username, section#input_zone {
-      border: 5px outset #8258FA;
+     
       height: 75px;
   }
   
@@ -42,7 +42,8 @@
       height: 30px;
       display: inline-block;
       margin:12px 0px;
-      background-color: #BCA9F5;
+      background-color:#3f51b5;
+      outline: none;
   }
   
   section#chatroom {

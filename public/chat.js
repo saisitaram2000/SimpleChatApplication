@@ -24,7 +24,7 @@ $(function(){
     //send changed username to server
     send_username.click(function(){
         socket.emit('change_username',{username:username.val()});
-        username.val('');
+        //username.val('');
       
     })
 
