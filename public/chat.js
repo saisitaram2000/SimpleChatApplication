@@ -1,6 +1,11 @@
+
+var PORT =window.location.port;
+var HOST =window.location.hostname;
+console.log(PORT);
+console.log(HOST);
 $(function(){
     //connection to server
-    var socket=io.connect(process.env.PORT || 3000);
+    var socket=io.connect(`http://${HOST}:${PORT}`);
     //inputs and buttons
     var username=$("#username");
     var message=$("#message");

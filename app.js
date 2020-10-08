@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-var PORT = process.env.PORT || 3000
+ const dotenv = require('dotenv');
+ dotenv.config();
+var PORT = process.env.PORT || 4000;
 //set template engine ejs
 app.set('viewengine','ejs');
 
